@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+	--primary-color: #6e7674;
+	--section-color: #f33f3f;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+body
+{
+	background-color: #000000;
+}
+
+.space {
+	height: 40px;
+}
+.space-1 {
+	height: 10px;
+}
+.hover-eff {
+	text-decoration: none;
+	transition: transform 0.2s;
+}
+.hover-eff:hover {
+	font-weight: bold;
+	color: var(--primary-color);
+	text-decoration: underline;
+
+	transform: scale(1.1);
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: rgb(0, 0, 0);
+
+}
+.para {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.extra-padding {
+	padding: 20px;
+}
+/* ------NAV-BAR----- */
+
+.nav-cont {
+	max-width: 320px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.nav-bar {
+	background-color: #ffffff;
+	border-radius: 4px;
+	border: 3px solid black;
+	margin-top: 1.5rem;
+
+	
+}
+.flex {
+	display: flex;
+}
+
+/* ------HOME------ */
+
+.intro {
+	font-size: 65px;
+	margin-top: 100px;
+	padding-left: 60px;
+}
+
+#img-1 {
+	border-radius: 50%;
+	border: 0.5px solid rgb(0, 0, 0);
+	transition: transform 0.2s;
+	width: 100%;
+}
+#img-1:hover {
+	transform: scale(1.1);
+}
+
+
+/* ----------CONTAINER------------ */
+.cont-1 {
+	height: 500px;
+	max-width: 1200px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 800px 400px;
+	justify-content: center;
+	align-items: center;
+}
+.handles {
+	display: flex;
+	margin-left: 40px;
+}
+.handle-box {
+	background-color: rgb(255, 255, 255);
+	text-decoration: NONE;
+	height: 17px;
+	width: 115px;
+	margin: 0 7px;
+	font-size: 14px;
+}
+.roles {
+	font-size: 20px;
+	margin-left: 10px;
+}
+.dash {
+	padding-left: 49px;
+	font-size: 50px;
+}
+.pad {
+	margin-left: 60px;
+}
+
+
+
+.cont-2 {
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 10px;
+}
+.cont-2-color {
+	background-color: var(--section-color);
+	width: 80%;
+	border-radius: 15px;
+}
+.add-c {
+	background-color: var(--section-color);
+}
+.add-c-1 {
+	background-color: #ffffff;
+}
+.cont-2-color-1 {
+	background-color: #ffffff;
+	width: 80%;
+	border-radius: 15px;
+}
+.cont-2 div {
+	width: 87%;
+	text-align: center;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+/* ----------BUTTONS----------- */
+.primary-link {
+	border-radius: 0.5rem;
+	color: white;
+	background-color: var(--primary-color);
+	text-decoration: none;
+}
+.secondary-link {
+	border-radius: 0.5rem;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	text-decoration: none;
+}
+.link1 {
+	padding: 0.5rem 1rem;
+}
+.primary-link:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+
+
+/* ----------footer------------ */
+.footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #f33f3f;
+}
+
+.fa {
+	padding: 17px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	margin: 18px;
+}
+
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-envelope {
+	background: #000000;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #000000;
+	color: white;
+}
+
+.txt-1 {
+	padding: 1px;
+	background-color: #ffffff;
+}
+
+@media (max-width: 560px) {
+	
+	.nav-cont {
+		max-width: 200px;
+	}
+
+	.cont-1 {
+		height: 300px;
+		max-width: 700px;
+	}
+	.p-res {
+		padding-left: 50px;
+	}
+	.dash {
+		padding-left: 79px;
+		font-size: 35px;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+	.intro {
+		font-size: 35px;
+		margin-top: 100px;
+		padding-left: 110px;
+	}
+	.name {
+		padding-left: 60px;
+	}
+	.roles {
+		font-size: 13px;
+	}
+	.handle {
+		font-size: 8px;
+	}
+	.pad {
+		margin-left: 33px;
+	}
+}
+@media (max-width: 983px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+	#img-1 {
+		
+		margin-top: 30px;
+		width: 50%;
+	}
+	.cont-1 {
+		height: auto;
+		margin: 0 auto;
+	}
+}
