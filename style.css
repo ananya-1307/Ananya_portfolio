@@ -52,22 +52,26 @@ body
 /* ------NAV-BAR----- */
 
 .nav-cont {
-	max-width: 320px;
+
+	max-width:40%;
 	height: 60px;
 	justify-content: center;
+	
 	align-items: center;
 	margin: 0 auto;
+	
 }
 .nav-bar {
 	background-color: #ffffff;
 	border-radius: 4px;
 	border: 3px solid black;
 	margin-top: 1.5rem;
-
+    
+	
 	
 }
 .flex {
-	display: flex;
+	display:flex;
 }
 
 /* ------HOME------ */
@@ -214,7 +218,7 @@ h1 {
 
 .txt-1 {
 	padding: 1px;
-	background-color: #ffffff;
+	
 }
 
 @media (max-width: 560px) {
